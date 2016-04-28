@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Quinta Aplicación </title>
+
+<!-- grupo CSS -->
+<link rel="stylesheet" href="css/app5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!-- grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<!---- imagenes de sustitucion----->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body>
+
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1> Día de la Tierra </h1>
+   </div>
+   <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1> ¿Qué es el Día de la Tierra? </h1>
+         <div>
+          <p>
+           El Día de la Tierra es un día celebrado en muchos países el 22 de abril. Su promotor, el senador estadounidense Gaylord Nelson, instauró este día para crear una conciencia común a los problemas de lasuperpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos.
+          </p>
+         </div>
+     </div>
+     
+     <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1> Historia </h1>
+         <div>
+          <p>
+           El Día de la Tierra es un día celebrado en muchos países el 22 de abril. Su promotor, el senador estadounidense Gaylord Nelson, instauró este día para crear una conciencia común a los problemas de lasuperpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos.
+          </p>
+         </div>
+     </div>
+  </div>
+  <!------- visor----->
+  <iframe src="visor/indexwow.html" style="width:350px;height:183px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>    
+  <p></p>  
+<div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2> Importancia</h2>
+       <p> Muestra la importancia de ese día </p>
+       </a>
+      </li>
+     <li class="ui-fist-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2> Manifestaciones de la Humanidad </h2>
+       <p>Nos muestra todo lo que se hace en esta fecha</p>
+       </a>
+      </li>
+     <li class="ui-fist-child ui-last-child">
+        <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> Muriendo Lentamente </h2>
+        <p> Muestra el daño que la sociedad ha causado a nuestra Tierra </p>
+       </a>
+    </li>
+    <li class="ui-fist-child ui-last-child">
+        <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2> ¿Como Salvar a nuestro Hogar? </h2>
+        <p> Reflexiona sobre los actos de la humanidad </p>
+       </a>
+    </li>
+   </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+       <img src="imagenes/earth_icon.png" width="46" height="46">
+    </div>
+    <div>
+       <h4>Aplicacion Cinco</h4>
+       <h4> Día de la Tierra </h4>
+       <h4>Xel-ha Lozada Lopez</h4>
+    </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Importancia</h1>
+   </div>
+   <div data-role="content" align="center">
+      <div>
+         <h3> ¿Te has preguntado por que es tan importante el 22 de Abril? </h3>
+         <p></p>
+         Gaylord Nelson escogió la fecha de tal manera que se maximizara la participación en las universidades, ya que lo consideraba un encuentro entre maestros y alumnos. Determinó que la semana del 19 al 25 de abril era la mejor apuesta, ya que esta no coincidía con los exámenes o las vacaciones de primavera. Más aún, esta fecha no tenía ningún conflicto con celebraciones religiosas como la Pascua o el Pésaj, y era demasiado tarde en primavera para tener un clima decente. Más estudiantes preferirían estar en clase y habría menos competencia con otros eventos de media semana –así que eligió el miércoles 22 de abril. El día también coincidió con el aniversario del natalicio de John Muir, notable conservacionista.
+         <br>
+         Sin el conocimiento de Nelson, el 22 de abril de 1970 fue, por coincidencia, el centésimo aniversario del natalicio de Lenin, cuando se trasladó al calendario gregoriano, el cual fue adoptado por los rusos hasta 1918. La revista Time reportó que muchos no pensaron que la fecha fuera una coincidencia, sino una pista de que el evento fue un “engaño comunista”, y citaron a un miembro de Daughters of the American Revolution, diciendo: “elementos subversivos planean hacer que los niños americanos vivan en un ambiente que sea bueno para ellos”. John Edgar Hoover, director del Buró Federal de Investigaciones, pudo haber creado la intriga de la conexión con Lenin, ya que se presumía que el FBI llevaba a cabo tareas de vigilancia en las manifestaciones de 1970. La idea de que la fecha fuera escogida para celebrar el centenario de Lenin, aún persiste en algunos cuarteles.
+         
+         <p>&nbsp;</p>
+<p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','imagenes/tumblr_o60t41A6bX1uj6dpfo1_500.jpg',1)"><img src="imagenes/dia_de_la_tierra_by_kottejosh723.jpg" width="250" height="250" id="Image2" /></a></p>
+<p>&nbsp;</p>
+
+      </div>
+    </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+       <img src="imagenes/earth_icon.png" width="46" height="46">
+    </div>
+    <div>
+       <h4>Aplicacion Cinco</h4>
+       <h4> Día de la Tierra </h4>
+       <h4>Xel-ha Lozada López</h4>
+    </div>
+</div>
+
+ </div>
+</div>
+<!------- Manifestaciones de la Humanidad -------------->
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Manifestaciones de la Humanidad</h1>
+   </div>
+   <div data-role="content" align="center">
+      <div>
+         <h3> ¿Qué es lo que hacen los seres humanos en este día? </h3>
+         <p></p>
+         Durante las celebraciones del vigésimo aniversario del Día de la Tierra en 1990, mucha gente manifestó su compromiso de promover la armonía entre la naturaleza y la tierra
+         <br>
+         <ul>
+          <li>En Francia, los participantes formaron una cadena humana a lo largo del Río Loira, alcanzando unos 800 km de longitud, con el propósito de honrar uno de los últimos ríos limpios de Europa.</li>
+          <li>En Asia, montañistas chinos, soviéticos y estadounidenses formaron un equipo para recolectar basura dejada en el Monte Everest por anteriores expediciones, reuniendo más de dos toneladas.</li>
+          <li>Unas cinco mil personas en Italia bloquearon carreteras, como protesta por la contaminación producida por los automóviles.</li>
+          <li>En Haití se declaró oficialmente al Día de la Tierra como un feriado nacional.</li>
+          <li>Alrededor de 10 000 estudiantes participaron a una campaña de limpieza en Jordania</li>
+          <li>Cerca 35 000 ambientalistas japoneses se reunieron en la Isla de los Sueños, (una isla artificial, ubicada en la Bahía de Tokio, construida con basura) con el propósito de establecer un centro de reciclaje temporal.</li>
+         </ul>
+         
+          <p>&nbsp;</p>
+<p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','imagenes/marcha_en_madrid.jpg',1)"><img src="imagenes/dia_de_la_tierra.jpg" width="250" height="250" id="Image3" /></a></p>
+<p>&nbsp;</p>
+         
+         <p></p>
+         <div data-role="collapsible" data-content-theme="false" align="justify">
+         <h1>Ciudades Verdes</h1>
+         <p></p>
+         Índice de Ciudades Verdes de América Latina: se trata de una evaluación comparativa del impacto ecológico de las principales ciudades de América Latina, según la División de Población de las Naciones Unidas, Latinoamérica es la región en vías de desarrollo más urbanizada del mundo, se maneja un porcentaje del 81% de la población viviendo en zonas urbanas. Así se justifican las preocupaciones como la congestión de tráfico, políticas de uso de la tierra, disposición de desechos y calidad del aire. Este proyecto de investigación es independiente, realizado por la Economist Intelligence Unit y patrocinado por Siemens.18 El reporte está dividido en cinco partes metodológicas; hace, además, un análisis profundo de Curitiba como ciudad líder en el tema. Se examinan los hallazgos respecto a las ocho categorías individuales del Índice: energía y CO2, uso de la tierra y edificios, transporte, desechos, agua, saneamiento, calidad del aire y gobernanza medioambiental. En México se incluyeron cuatro ciudades de las cuales las mejores calificadas fueron: Ciudad de México y Puebla, destacando a ésta por llevar a cabo un “proyecto ejemplar” llamado Monedero Ecológico19 por encima de Monterrey y Guadalajara.
+         
+          <p>&nbsp;</p>
+<p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image5','','imagenes/ciudad_verde.jpg',1)"><img src="imagenes/plan_ciudad_verde.png" width="250" height="250" id="Image5" /></a></p>
+<p>&nbsp;</p>
+
+         </div>
+      </div>
+    </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+       <img src="imagenes/earth_icon.png" width="46" height="46">
+    </div>
+    <div>
+       <h4>Aplicacion Cinco</h4>
+       <h4> Día de la Tierra </h4>
+       <h4>Xel-ha Lozada Lopez</h4>
+    </div>
+</div>
+
+ </div>
+</div>
+
+<!-------- ¿Cómo es que podemos salvar a la Tierra? -------------->
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Mueriendo Lentamente</h1>
+   </div>
+   <div data-role="content">
+      <div>
+         Diariamente en nuestras actividades ya sean de recreación, estudio, trabajo o supervivencia generamos impactos y  residuos que contaminan  el ambiente.
+         <br>
+Unos son el resultado de acciones irresponsables que conducen a la contaminación y otros por acciones que igualmente ponen en riesgo la supervivencia y estas son: Uso irracional del agua y la energía, Tala indiscriminada, explotación indiscriminada de fauna y flora, manejo inadecuado de residuos industriales y domiciliarios, corrupción en el uso y aplicabilidad de la normatividad ambiental para la protección y el adecuado manejo de los recursos naturales.
+         <br>
+         Esto nos afectan a todos y cada uno de los que lo conformamos (suelo, agua, aire: animales, plantas, personas.) tanto aquí como en cualquier parte del mundo.
+ Formamos parte de un todo en el cual nos beneficiamos los unos de los otros a través de un sin número de interrelaciones presentes como eslabones en una cadena en la cual lo que afecte a uno de una forma u otra afectara al otro.
+         <br>
+ Hoy en día se pueden apreciar las consecuencias de actividades humanas inconscientes que han ocasionado cambios en el ambiente y con ello afectaciones directas e indirectas a la vida diaria las cuales si no controlamos van en aumento.
+         <br>
+Contaminamos el agua, el suelo, con depósitos de basuras Pesticidas, desechos químicos, biológicos, metales pesados, residuos radiactivos, industriales, domiciliarios; contaminamos el aire con  las emisiones de gases industriales, automotores, domiciliarios; talamos los árboles, afectamos directamente a los animales extrayéndolos de su medio e indirectamente modificando y contaminando su hábitat, o introduciendo animales y plantas en un medio ajeno al propio sin prever las consecuencias y las alteraciones del equilibrio del ecosistema, de igual forma en las producción animal irracional en la que no se tiene en cuenta el bienestar animal o la importancia del adecuado manejo de los residuos que de esta se generan.
+         <p></p>
+          Las consecuencias  cada día son más evidentes: en el calentamiento global, el cambio climático, la extinción de las especies sin imaginar su papel importante en los ecosistemas, el aumento de las enfermedades en las personas, los cambios en la calidad del agua y del suelo, la modificación genética de las especies, el deterioro de la calidad del aire, la lluvia ácida, las afectaciones a la flora, el deshielo, afectaciones a la capa de ozono, las inundaciones…
+          <br>
+ Aun así muchos piensan: “eso no es conmigo” y demuestran su indiferencia ante este importante tema, Otros causan afectaciones pero solo ven a los que no hacen nada y se suman a ellos para no hacer nada. Afortunadamente existen personas y grupos que están en la lucha para conservar lo que aún queda y a esos son los que hay que seguir, imitar, mejorar y apoyar.
+          <br>
+ Tenemos la responsabilidad en realizar un adecuado manejo de los recursos naturales que diariamente administramos, es un compromiso principalmente con todos los seres vivos y especialmente con las generaciones futuras de realizar acciones que contribuyan a la conservación y mantenimiento del medio ambiente; estas acciones deben ir encaminadas a prevenir, mitigar, conservar, remediar, corregir, compensar los impactos ambientales direccionando nuestras acciones hacia un desarrollo sostenible que nos garantice el equilibrio.
+          <br>
+El cambio depende de todos y está en nuestra voluntad poder lograrlo, y lo más importante es que nunca es tarde para empezar a cambiar y sumarte a quienes estamos en la lucha.
+ <p>&nbsp;</p>
+<p align="center"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','imagenes/dia_mundial_de_la_tierra.jpg',1)"><img src="imagenes/planeta_tierra.jpg" width="250" height="250" id="Image4" /></a></p>
+<p>&nbsp;</p>
+      </div>
+    </div>
+    
+    
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+       <img src="imagenes/earth_icon.png" width="46" height="46">
+    </div>
+    <div>
+       <h4>Aplicacion Cinco</h4>
+       <h4> Día de la Tierra </h4>
+       <h4>Xel-ha Lozada Lopez</h4>
+    </div>
+   </div>
+
+ </div>
+</div>
+
+<!------- Reflexion----->
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>¿Como salvar a Nuestro Hogar?</h1>
+   </div>
+   <div data-role="content" align="center">
+      <div>
+         <h3> ¿Qué harias pra salvar a tu unico hogar? </h3>
+         <p></p>
+         La gente a diario se pregunta coss las cuales lgunas no tienen sentido, pero muchos otros no se preguntan sobre lo que le pasa a nuestra Tierra.
+         <br>
+         Hay que ser consientes de lo que ocurre a nuestro alrededor. Cada dia la Tierra va cambiando, son cmbios minimos, pero, co el paso del tiempo se van mostrando. Hace años este planeta era totalmente verde, limpio, un ire y un agua pur, no habia nada mas que naturaleza y paz, con la llegada del hombre esta comenzo con algunos cambios.
+         <br>
+         En la actualidad aun se pueden ver las areas verdes, aun puedes difrutar de un cielo azul, de un agua pura, puedes apreciar el amanecer y anochecer de cada dia...pero...¿las futuras generaciones podran difrutar lo mismo que tu?.
+         <br>
+         Si la humanidad sigue en el mismo plan de causar daño a este planet, lo unico que quedara en algun futuro no muy lejano es solo UN MUNDO GRIS. Ya no habra cielo azul, ni aire limpio, los animales iran desapareciendo, todo viviendo con cubrevocas, viviendo en un mundo el cual ya no da mas frutos y si lo llega a dar seran frutos podridos por un mal que se creo y todo esto gracias a el daño colectivo que la humanidad causo a la Tierra, dime ¿Te gustaria que las futuras generaciones vivan de esa manera?.
+         <br>
+         Te dire una cosa, ¡AUN HAY TIEMPO!.
+         <br>
+         Todavia puedes salvar a la Tierra, con algunas acciones que se hagan se pueden hacer la diferencia, tu puedes hacer la diferencia, el cambio depende de ti, haz que este mundo vuelva a brillar, haz que este planeta sea habitable para las demas generaciones.
+         <br>
+         ¡CUIDA A TU PLANETA!....¡CUIDA LA TIERRA!
+         <p></p>
+         <iframe src="link.html" style="width:350px;height:350px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+         
+         <p>&nbsp;</p>
+<p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image6','','imagenes/tumblr_o60t41A6bX1uj6dpfo1_500.jpg',1)"><img src="imagenes/dia_de_la_tierra_by_kottejosh723.jpg" width="250" height="250" id="Image6" /></a></p>
+<p>&nbsp;</p>
+
+      </div>
+    </div>
+    
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+       <img src="imagenes/earth_icon.png" width="46" height="46">
+    </div>
+    <div>
+       <h4>Aplicacion Cinco</h4>
+       <h4> Día de la Tierra </h4>
+       <h4>Xel-ha Lozada Lopez</h4>
+    </div>
+</div>
+
+ </div>
+</div>
+</body>
+</html>
